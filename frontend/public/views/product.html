@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles/product.css">
+    <link rel="stylesheet" href="/styles/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <script type="module" src="/controllers/product.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Editar producto</h1>
+    </header>
+    <main>
+
+    <div class="container-detail-product">
+        <section >
+
+            <form  class="form-editar-product" id="form-editar-product">
+
+                <label for="name">
+                    Nombre:
+                    <input type="text" name="name" id="name" required>
+                </label>
+                <label for="stock">
+                    Stock:
+                    <input type="number" min="1" required name="stock" id="stock">
+                </label>
+                <label for="image">
+                    Imagen:
+                    <input type="text" name="image" id="image">
+                </label>
+                <label for="price">
+                    Precio:
+                    <input type="text" name="price" id="price">
+                </label>
+                <label for="category">
+                    Categoría:
+                    <input type="text" name="category" id="category">
+                </label>
+                <label for="description">
+                    Descripción:
+                    <input type="text" name="description" id="description">
+                </label>
+                <button type="submit">Editar</button>
+            </form>
+        </section>
+        <section id="container-product" class="container-product" style="border: 1px solid #ddd;">
+            <h1>Detalle del producto</h1>
+        </section>
+    </div>
+</main>
+
+<footer class="footer">
+    <a href="/" class="btn-volver">Volver al inicio</a>
+
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>

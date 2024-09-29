@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: "Poppins", sans-serif; 
+
+}
+
+ 
+h1{
+    color: #4338CA;
+}
+
+main{
+    min-height: 90vh;
+}
+
+body{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1280px;
+    place-items: center;
+    place-content: center;
+}
+
+.form-editar-product{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-flow: column wrap;
+    max-width: 500px;
+    border: 1px solid #ddd;
+    padding: 1em;
+    border-radius: .5em;
+    & label{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    & label > input{
+        padding: 1em;
+        border-radius: 5px;
+        transition: all .5s ease;
+        border: none;
+        background-color: #f5f5f5;
+    }
+
+    & label > input:focus{
+        background-color: rgb(222, 222, 255);
+    }
+
+    
+
+    & button{
+        margin-top:  1em;
+        padding: 1em;
+        background-color: #4338CA;
+        color: white;
+        border-radius: .5em;
+        max-width: 140px;
+        border: none;
+        cursor: pointer;
+        box-shadow: 0 0.625em 1em 0 rgba(30, 143, 255, 0.35);
+        transition: all .5s ease;
+        width: 100%;
+    }
+
+    & button:hover{
+        transform: scale(1.05);
+    }
+
+    & section{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.container-detail-product{
+    display:  flex;
+    width: 100%;
+    border: 1px solid #ddd;
+    padding: 1em;
+    border-radius: 1em ;
+    & section {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.btn-volver{
+    padding: 1em;
+    display: block;
+    max-width: 200px;
+    text-align: center;
+
+    background-color: black;
+}
+
+.container-product{
+    display:  flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border-radius: .5em;
+}
+
+.delete-btn{
+    margin-top: 1em;
+    padding: 1em;
+    background-color: #ca3838;
+    color: white;
+    border-radius: .5em;
+    max-width: 140px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 0.625em 1em 0 rgba(255, 30, 30, 0.35);
+    transition: all .5s ease;
+    width: 100%;
+
+    &:hover{
+        transform: scale(1.05);
+    }
+}
+
+.footer{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
